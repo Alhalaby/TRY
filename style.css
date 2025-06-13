@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 120vh;
+    background: url(./Chess.jpg) center/cover no-repeat;
+    position: relative;
+}
+
+.btn {
+  display: inline-block;
+  
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.btn-primary{
+    border: 2px solid rgb(255, 255, 255);
+    padding: 5px 10px ;
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+
+.btn-primary:hover{
+    border: 2px solid #e4b95b;
+    background-color: #e4b95b;
+}
+html{
+    scroll-behavior:smooth ;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: "Quicksand", sans-serif;
+}
+#navbar img{
+    width: 150px;
+    margin-left: 100px;
+    margin-top: 1px;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(0, 0, 0,.8);
+}
+#navbar .navbar01 ul{
+    display: flex;
+    
+}
+
+#navbar .navbar01 ul li a{
+    padding: 5px 15px;
+    color: aliceblue;
+    font-weight: 700;
+}
+
+#navbar .navbar01 ul li a:hover{
+    border-bottom:2px solid #e4b95b ;
+
+
+}
+#navbar .navbar02 ul{
+    margin-right: 100px;
+    color: aliceblue;
+    font-weight: 700;
+}
+#navbar .head01 h1{
+    margin-left: -230px;
+    margin-top: -2px;
+    display: none;
+}
+
+header .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    
+}
+header .content h2{
+    color: white;
+    
+    font-size: 50px;
+}
+header .content h2 span{
+    color: #e4b95b;
+    font-size: 50px;
+}
+
+header .content p{
+    color: white;
+    
+    margin-left: -250px;
+    font-size: 20px;
+}
+header::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(0, 0, 0, 0.6);
+}
+header * {
+  z-index: 10;
+}
+
+/* Responsiveness */
+/* Medium Screen + Tablet */
+@media (max-width: 1000px) {
+  #navbar img {
+    margin-left: 20px;
+  }
+
+  nav ul {
+    margin-right: 20px;
+  }
+
+  nav ul li a {
+    padding: 10px;
+  }
+
+  header .content h1 {
+    font-size: 28px;
+  }
+
+  #about {
+    height: auto;
+    padding: 4rem 2rem;
+  }
+
+  #about .about-content p {
+    margin-right: 2rem;
+  }
+
+  #about img {
+    width: 250px;
+  }
+
+  #offers .offers-items img {
+    width: 150px;
+  }
+
+  #offers .offers-items h3 {
+    font-size: 18px;
+  }
+
+  #menu .menu-items {
+    display: block;
+  }
+
+  #contact .contact-content {
+    flex-direction: column;
+  }
+
+  /* Mobile Devices */
+  @media (max-width: 600px) {
+    #navbar {
+      flex-direction: column;
+      
+    }
+    #navbar .navbar01 ul{
+        font-size: 10px;
+        margin-top: -10px;
+    }
+    header .content p{
+        font-size: 15px;
+        margin-left: 0px;
+    }
+    
+    header .content h2{
+        font-size: 20px;
+    }
+    #navbar .navbar02 ul{
+        margin-top: 350px;
+        margin-left: 100px;
+    }
+    #navbar .head01 h1{
+        margin-top: -60px;
+        margin-left: 10px;
+    }
+    #navbar img {
+        width: 120px;
+      margin-bottom: 20px;
+      margin-left: -220px;
+    }
+
+    header .content h1 {
+      font-size: 18px;
+    }
+
+    header .content p {
+      font-size: 14px;
+    }
+
+    #about .about-content {
+      flex-direction: column;
+    }
+
+    #about .about-content a {
+      margin: 2rem 0;
+    }
+
+    #about img {
+      display: none;
+    }
+
+    #offers {
+      height: auto;
+      padding: 30px 10px;
+    }
+
+    #offers .offers-items {
+      flex-direction: column;
+    }
+
+    #menu .menu-items .menu-item {
+      margin: 20px 10px;
+    }
+
+    #daytime .daytime-items {
+      display: block;
+      height: auto;
+      padding: 30px 0;
+    }
+
+    #daytime .daytime-items .daytime-item {
+      margin-top: 20px;
+    }
+
+    #contact .contact-info,
+    form {
+      width: 80%;
+    }
+  }
+}
+
+
